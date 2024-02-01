@@ -1,10 +1,11 @@
 # DSA Assignment-3
 
-## Question- 1 () 
+## Question- 1 (Longest Substring w/o Repeating Characters)
 
-- **Submission Link:** [LeetCode Submission](https://leetcode.com/problems/)
+- **Submission Link:** [LeetCode Submission](https://leetcode.com/problems/longest-substring-without-repeating-characters/submissions/1161548895)
 - **Status:** Passed all test cases
-- **Time Complexity:** O(nlogk)
-- **Space Complexity:** O(k)
-- **Explanation:** A priority-queue (heap) of k elements is maintained and then interates across elements of n sized array ensuring that only largest k elements encounterred till now remain in the heap. So after iterating through whole array the top element of the priority queue will be the smallest element among largest k elements of the array which is the required answers.
-  ![Submission Photo](<./Ques-5/image.png>)
+- **Time Complexity:** O(l) where l is the length of the string.
+- **Space Complexity:** O(l) where l is the length of the string.
+- **Explanation:** It utilizes a sliding window approach, using pointers to track the substring's boundaries and a set to maintain unique characters within the window. The window slides through the string, adjusting pointers and updating the count of unique characters encountered. Finally, it returns the maximum count as the length of the longest substring without repeating characters.
+  [Submission Photo](image.png)
+
